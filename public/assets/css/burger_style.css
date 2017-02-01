@@ -1,0 +1,61 @@
+body {
+    background-color: #CFEBEA;
+    color: #6E4438;
+    font-family: 'Josefin Slab', serif;
+}
+
+h1 {
+    font-family: 'Barrio', cursive;
+    font-size: 100px;
+}
+
+h2 {
+    color: #F26554;
+    font-family: 'Pangolin', cursive;
+}
+
+img {
+    display: block;
+    height: 200px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    font-size: 24px;
+}
+
+label {
+    font-size: 24px;
+}
+
+.wrapper {
+    background: rgba(207, 235, 234, 1);
+    background: -moz-linear-gradient(top, rgba(207, 235, 234, 1) 0%, rgba(147, 206, 222, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(207, 235, 234, 1)), color-stop(100%, rgba(147, 206, 222, 1)));
+    background: -webkit-linear-gradient(top, rgba(207, 235, 234, 1) 0%, rgba(147, 206, 222, 1) 100%);
+    background: -o-linear-gradient(top, rgba(207, 235, 234, 1) 0%, rgba(147, 206, 222, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(207, 235, 234, 1) 0%, rgba(147, 206, 222, 1) 100%);
+    background: linear-gradient(to bottom, rgba(207, 235, 234, 1) 0%, rgba(147, 206, 222, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#cfebea', endColorstr='#93cede', GradientType=0);
+}
+
+.orange {
+    color: #F49E18;
+}
+
+.green {
+    color: #99C24A;
+}
+
+.yellow {
+    color: #FDF38C;
+}
+
+.red {
+    color: #F26554;
+}
+
+.brown {
+    color: #6E4438;
+}
