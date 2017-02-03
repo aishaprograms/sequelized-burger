@@ -1,25 +1,25 @@
 <div class="row">
-	<div class="col-md-6">
-		<h2>Burgerz, Bon Appétit!</h2>
+	<div class="col-md-4">
+		<h2>Burgers To Eat</h2>
 		<hr>
-		<ul>
+		<ol>
 		  {{#each burgers}}
 		    {{#unless this.devoured}}
 		      <li>
-		        {{this.burger_name}}
 		        <form class="form-inline" action="/{{this.id}}?_method=PUT" method="POST">
+		        {{this.burger_name}}
 		          <input type="hidden" name="devoured" value="false">
-		          <button class="btn btn-success" type="submit">Devour it!</button>
+		          <button class="btn btn-xs btn-success" type="submit">Devour it!</button>
 		        </form>
 		      </li>
 		    {{/unless}}
 		  {{/each}}
-		</ul>
+		</ol>
 	</div>
-	<div class="col-md-6">
-		<h2>Burgerz Consumed</h2>
+	<div class="col-md-4">
+		<h2>Burgers I've Eaten</h2>
 		<hr>
-		<ul>
+		<ol>
 			  {{#each burgers}}
 			    {{#if this.devoured}}
 			      <li>
@@ -27,20 +27,19 @@
 			      </li>
 			    {{/if}}
 			  {{/each}}
-		</ul>
+		</ol>
 	</div>
-</div>
-<hr>
-<hr>
-<div class="row text-center">
-	<h2><span class="red">Add a Burger</span></h2>
-	<form action="/" method="POST">
-	  <div class="form-group">
-	    <label for="burger_name">Burger Name:</label>
-	    <input type="text" id="burger_name" name="burger_name">
-	  </div>
-	  <button class="btn btn-success" type="submit">Submit</button>
-	</form>
+	<div class="col-md-4">
+		<h2>More Burgers</h2>
+		<hr>
+		<form action="/" method="POST">
+		  <div class="form-group">
+		    <label for="burger_name">Name:</label>
+		    <input type="text" id="burger_name" name="burger_name" required>
+		  </div>
+		  <button class="btn btn-success" type="submit">Submit</button>
+		</form>
+	</div>
 </div>
 <br>
 <br>

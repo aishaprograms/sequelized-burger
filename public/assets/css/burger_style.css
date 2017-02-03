@@ -1,27 +1,31 @@
 body {
-    background-color: #CFEBEA;
-    color: #6E4438;
-    font-family: 'Josefin Slab', serif;
+    background-image: url(../img/restaurant/restaurant.png);
+    color: #2A2A2A;
+    font-family: 'Crimson Text', serif;
 }
 
 h1 {
-    font-family: 'Barrio', cursive;
+    color: #85c8c5;
+    font-family: 'Bad Script', cursive;
     font-size: 100px;
 }
 
-h2 {
-    color: #F26554;
-    font-family: 'Pangolin', cursive;
+blockquote {
+    color: #85c8c5;
 }
 
 img {
+    border-radius: 50%;
     display: block;
-    height: 200px;
+    height: 175px;
     margin: 0 auto;
 }
 
-ul {
-    list-style: none;
+hr {
+    border-color: black;
+}
+
+ol {
     font-size: 24px;
 }
 
@@ -29,15 +33,19 @@ label {
     font-size: 24px;
 }
 
-.wrapper {
-    background: rgba(207, 235, 234, 1);
-    background: -moz-linear-gradient(top, rgba(207, 235, 234, 1) 0%, rgba(147, 206, 222, 1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(207, 235, 234, 1)), color-stop(100%, rgba(147, 206, 222, 1)));
-    background: -webkit-linear-gradient(top, rgba(207, 235, 234, 1) 0%, rgba(147, 206, 222, 1) 100%);
-    background: -o-linear-gradient(top, rgba(207, 235, 234, 1) 0%, rgba(147, 206, 222, 1) 100%);
-    background: -ms-linear-gradient(top, rgba(207, 235, 234, 1) 0%, rgba(147, 206, 222, 1) 100%);
-    background: linear-gradient(to bottom, rgba(207, 235, 234, 1) 0%, rgba(147, 206, 222, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#cfebea', endColorstr='#93cede', GradientType=0);
+input[type="text"] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px dashed #2A2A2A;
+    outline: none;
+}
+
+footer {
+    color: #E7F5F5;
+}
+
+.container {
+    background-image: url('../img/lined_paper/lined_paper.png');
 }
 
 .orange {
@@ -45,11 +53,11 @@ label {
 }
 
 .green {
-    color: #99C24A;
+    color: #99c24a;
 }
 
 .yellow {
-    color: #FDF38C;
+    color: #FCEB41;
 }
 
 .red {
@@ -58,4 +66,8 @@ label {
 
 .brown {
     color: #6E4438;
+}
+
+#header-wrapper {
+    background-color: #E7F5F5;
 }
